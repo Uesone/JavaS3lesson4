@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch(
         `https://api.pexels.com/v1/search?query=${query}`,
         {
+          method: "GET",
           headers: {
             Authorization: api_key,
           },
