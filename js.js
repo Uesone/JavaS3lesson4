@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".view-button").forEach((button) => {
       button.addEventListener("click", (e) => {
         const photoId = e.target.getAttribute("data-id");
-        viewImage(photoId);
+        window.location.href = `details.html?photoId=${photoId}`;
       });
     });
   };
